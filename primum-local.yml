@@ -33,6 +33,11 @@ iflow:
   timer:
     max-retry-count: 26
 
+engine:                                                                                                         
+  rest:                                                                                                         
+    timeout: ${ENGINE_REST_TIMEOUT:10000}                                                                       
+    read-timeout: ${ENGINE_REST_READ_TIMEOUT:600000}
+
 camunda:
   bpm:
     default-number-of-retries: 1
