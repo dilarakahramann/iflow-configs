@@ -35,6 +35,7 @@ iflow:
 
 camunda:
   bpm:
+    default-number-of-retries: 1
     history-level-default: full
     history-level: full
     job-execution:
